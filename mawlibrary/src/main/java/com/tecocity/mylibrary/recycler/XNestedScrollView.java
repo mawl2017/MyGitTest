@@ -1,10 +1,11 @@
 package com.tecocity.mylibrary.recycler;
 
 import android.content.Context;
-import android.support.v4.widget.NestedScrollView;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.view.ViewConfiguration;
+
+import androidx.core.widget.NestedScrollView;
 
 /**
  * 功能: 重写NestedScrollView，防止5.0以上机器 滑动冲突问题，实际上是NestedScrollView禁止滑动

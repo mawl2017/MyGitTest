@@ -2,10 +2,6 @@ package com.tecocity.mylibrary.recycler;
 
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.support.annotation.ColorRes;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.RecyclerView.AdapterDataObserver;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -14,8 +10,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 
-import com.monians.xlibrary.R;
-import com.monians.xlibrary.recycler.adapter.RecyclerArrayAdapter;
+import com.tecocity.mylibrary.R;
+import com.tecocity.mylibrary.recycler.adapter.RecyclerArrayAdapter;
+
+import androidx.annotation.ColorRes;
+import androidx.recyclerview.widget.RecyclerView;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 public class XRecyclerView extends FrameLayout {
     public static final String TAG = "XRecyclerView";
@@ -202,7 +202,7 @@ public class XRecyclerView extends FrameLayout {
     }
 
 
-    private static class EasyDataObserver extends AdapterDataObserver {
+    private static class EasyDataObserver extends RecyclerView.AdapterDataObserver {
         private XRecyclerView recyclerView;
         private boolean isInitialized = false;
         private boolean hasProgress = false;
@@ -354,7 +354,7 @@ public class XRecyclerView extends FrameLayout {
      *
      * @param listener
      */
-    public void setRefreshListener(android.support.v4.widget.SwipeRefreshLayout.OnRefreshListener listener) {
+    public void setRefreshListener(SwipeRefreshLayout.OnRefreshListener listener) {
         mPtrLayout.setEnabled(true);
         mPtrLayout.setOnRefreshListener(listener);
         this.mRefreshListener = listener;

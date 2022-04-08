@@ -9,7 +9,7 @@ import android.os.Handler;
 import android.util.AttributeSet;
 import android.view.View;
 
-import com.monians.xlibrary.log.XLog;
+import com.tecocity.mylibrary.log.XLog;
 
 /**
  * 功能:

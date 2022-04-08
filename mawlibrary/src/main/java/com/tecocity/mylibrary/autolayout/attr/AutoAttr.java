@@ -2,8 +2,8 @@ package com.tecocity.mylibrary.autolayout.attr;
 
 import android.view.View;
 
-import com.monians.xlibrary.autolayout.utils.AutoUtils;
-import com.monians.xlibrary.autolayout.utils.L;
+import com.tecocity.mylibrary.autolayout.utils.AutoUtils;
+import com.tecocity.mylibrary.autolayout.utils.L;
 
 
 /**
