@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "MyGitTest"
 include ':app'
+include ':mylibrary'
+include ':mawlibrary'
